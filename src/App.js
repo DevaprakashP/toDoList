@@ -47,7 +47,7 @@ function App() {
       <Header title="To Do List" />
       <AddItem newItem={newItem} setNewItem={setNewItem} handleSubmit={handleSubmit}/>
       <SearchItem search={search} setSearch={setSearch}/>
-      <Content  items={items.filter(item=>((item.value).toLowerCase()).includes(search.toLowerCase()))} handleCheck={handleCheck} handledelete={handledelete}/>
+      <Content  items={items?.filter(item=>((item.value).toLowerCase()).includes(search.toLowerCase()))} handleCheck={handleCheck} handledelete={handledelete}/>
       <Footer foot={items.length}/>
     </div>
     </div></>
