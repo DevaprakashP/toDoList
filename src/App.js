@@ -1,3 +1,10 @@
+import { useEffect, useState } from 'react';
+import Content from './Content';
+import Footer from './Footer';
+import Header from './Header';
+import AddItem from './AddItem';
+import { SearchItem } from './SearchItem';
+
 function App() {
   const [items, setItems] = useState(
     JSON.parse(localStorage.getItem('todo_list')) || [] // Default to an empty array if null
